@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+
+<body>
+
+  <form id="regForm" action="" method="get" enctype="multipart/form-data">
+    <h1>Register:</h1>
+    <!-- One "tab" for each step in the form: -->
+    <div class="tab">
+      <label for="e_post">E-post</label>
+      <input type="text" placeholder="" oninput="this.className = ''" name="e_post" id="e_post" class="">
+      <div class="cl">
+        <label for="password">Password</label>
+        <input type="password" placeholder="" oninput="this.className = ''" name="password" id="password" class="">
+      </div>
+      <div class="cl cln">
+        <label for="bekerft_password">Bekerft Password</label>
+        <input type="password" placeholder="" oninput="this.className = ''" name="bekerft_password"
+          id="bekerft_password" class="">
+      </div>
+      <br><br><br>
+      <br><br><br>
+
+    </div>
+
+    <div class="tab">
+      <div class="cl">
+        <label for="company_name">Company name</label>
+        <input type="text" placeholder="" oninput="this.className = ''" name="company_name" id="company_name" class="">
+      </div>
+      <div class="cl cln">
+        <label for="registation_number">Registation number</label>
+        <input type="number" placeholder="" oninput="this.className = ''" name="registation_number"
+          id="registation_number" class="">
+      </div>
+      <div class="cl">
+        <label for="contact_email">Contact email</label>
+        <input type="email" placeholder="" oninput="this.className = ''" name="contact_email" id="contact_email"
+          class="">
+      </div>
+      <div class="cl cln">
+        <label for="contact_phone">Contact phone</label>
+        <input type="number" placeholder="" oninput="this.className = ''" name="contact_phone" id="contact_phone"
+          class="">
+      </div>
+      <div class="cl">
+        <label for="city">City</label>
+        <input type="text" placeholder="" oninput="this.className = ''" name="city" id="city" class="">
+      </div>
+      <div class="cl cln">
+        <label for="street">Street</label>
+        <input type="text" placeholder="" oninput="this.className = ''" name="street" id="street" class="">
+      </div>
+      <div class="cl">
+        <label for="post_code">Post code</label>
+        <input type="number" placeholder="" oninput="this.className = ''" name="post_code" id="post_code" class="">
+      </div>
+    </div>
+
+    <div class="tab">
+      <div class="cl">
+        <label for="fornavn">Fornavn</label>
+        <input type="text" placeholder="" oninput="this.className = ''" name="fornavn" id="fornavn" class="">
+      </div>
+      <div class="cl cln">
+        <label for="etternavn">Etternavn</label>
+        <input type="text" placeholder="" oninput="this.className = ''" name="etternavn id="etternavn" class="">
+      </div>
+      <div class="cl">
+        <label for="telafon">telafon</label>
+        <input type="number" placeholder="" oninput="this.className = ''" name="telafon" id="telafon" class="">
+      </div>
+    </div>
+
+  
+
+    <div style="overflow:auto;">
+      <div style="float:right;">
+        <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
+        <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+      </div>
+    </div>
+    <!-- Circles which indicates the steps of the form: -->
+    <div style="text-align:center;margin-top:40px;">
+      <span class="step"></span>
+      <span class="step"></span>
+      <span class="step"></span>
+      <!-- <span class="step"></span> -->
+    </div>
+  </form>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
